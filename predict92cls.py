@@ -26,8 +26,8 @@ from utils import *
 cv2.setNumThreads(0)
 cv2.ocl.setUseOpenCL(False)
 
-test_dir = 'test/images'
-models_folder = 'weights'
+models_folder = '/content/drive/MyDrive/weights'
+test_dir = '/content/drive/MyDrive/test/images'
 
 if __name__ == '__main__':
     t0 = timeit.default_timer()
