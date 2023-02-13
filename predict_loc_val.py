@@ -27,10 +27,11 @@ from sklearn.model_selection import train_test_split
 cv2.setNumThreads(0)
 cv2.ocl.setUseOpenCL(False)
 
-test_dir = 'test/images'
+models_folder = '/content/drive/MyDrive/weights'
+test_dir = '/content/drive/MyDrive/test/images'
 pred_folder = 'pred_loc_val'
 train_dirs = ['train', 'tier3']
-models_folder = 'weights'
+
 
 all_files = []
 for d in train_dirs:
