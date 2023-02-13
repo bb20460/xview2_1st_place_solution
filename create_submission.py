@@ -24,7 +24,7 @@ from skimage.morphology import square, dilation
 cv2.setNumThreads(0)
 cv2.ocl.setUseOpenCL(False)
 
-test_dir = 'test/images'
+test_dir = '/content/drive/MyDrive/test/images'
 pred_folders = ['res34cls2_0_tuned', 'res34cls2_1_tuned', 'res34cls2_2_tuned']
 pred_coefs = [1.0] * 3
 loc_folders = ['pred34_loc']
