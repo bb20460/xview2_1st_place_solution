@@ -26,7 +26,7 @@ cv2.setNumThreads(0)
 cv2.ocl.setUseOpenCL(False)
 
 models_folder = '/content/drive/MyDrive/weights'
-test_dir = '/content/drive/MyDrive/test/images'
+test_dir = '/content/drive/MyDrive/1024/test1/images'
 pred_folder = 'pred34_loc'
 
 
