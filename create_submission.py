@@ -24,11 +24,11 @@ from skimage.morphology import square, dilation
 cv2.setNumThreads(0)
 cv2.ocl.setUseOpenCL(False)
 
-test_dir = '/content/drive/MyDrive/test/images'
-pred_folders = ['res34cls2_0_tuned', 'res34cls2_1_tuned', 'res34cls2_2_tuned']
-pred_coefs = [1.0] * 3
-loc_folders = ['pred34_loc']
-loc_coefs = [1.0] * 1
+test_dir = '/content/drive/MyDrive/1024/test1/images'
+pred_folders = ['dpn92cls_cce_0_tuned', 'dpn92cls_cce_1_tuned', 'dpn92cls_cce_2_tuned'] + ['res34cls2_0_tuned', 'res34cls2_1_tuned', 'res34cls2_2_tuned'] + ['res50cls_cce_0_tuned', 'res50cls_cce_1_tuned', 'res50cls_cce_2_tuned'] + ['se154cls_0_tuned', 'se154cls_1_tuned', 'se154cls_2_tuned']
+pred_coefs = [1.0] * 12
+loc_folders = ['pred50_loc_tuned', 'pred92_loc_tuned', 'pred34_loc', 'pred154_loc']
+loc_coefs = [1.0] * 4 
 
 sub_folder = 'submission'
 
