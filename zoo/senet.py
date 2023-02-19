@@ -6,6 +6,9 @@ https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
 from collections import OrderedDict
 import math
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import torch
 import torch.nn as nn
 from torch.utils import model_zoo
