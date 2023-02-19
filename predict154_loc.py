@@ -27,7 +27,7 @@ cv2.ocl.setUseOpenCL(False)
 
 pred_folder = 'pred154_loc'
 models_folder = '/content/drive/MyDrive/weights'
-test_dir = '/content/drive/MyDrive/test/images'
+test_dir = '/content/drive/MyDrive/1024/test1/images'
 
 if __name__ == '__main__':
     t0 = timeit.default_timer()
