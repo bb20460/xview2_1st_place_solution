@@ -5,8 +5,12 @@ from torch import nn
 import torch.nn.functional as F
 import torchvision.models
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 from .senet import se_resnext50_32x4d, senet154
 from .dpn import dpn92
+
 
 
 class ConvReluBN(nn.Module):
